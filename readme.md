@@ -27,7 +27,7 @@ $ while true; do wget -q -O- http://go-hpa.default.svc.cluster.local:8000; done;
 ## Docker Hub
 
 ```bash
-$ docker run tineto/go-hpa
+$ docker run -d --name go-hpa -p 8080:8000 tineto/go-hpa
 ```
 
 ## Links
